@@ -106,4 +106,4 @@ Contributions are welcome! Please submit a pull request with detailed descriptio
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under The Unlicense. See the [LICENSE](LICENSE) file for details.
