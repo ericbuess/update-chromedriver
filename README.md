@@ -1,6 +1,6 @@
 # ChromeDriver Updater
 
-This project automatically updates the ChromeDriver to match the installed Chrome browser version. It downloads the appropriate ChromeDriver version, extracts it, and places it in the specified path.
+This project automatically updates the ChromeDriver to match the installed Chrome browser version. It downloads the appropriate ChromeDriver version, extracts it, and places it in the specified path. This is useful for tools like Selenium that require a ChromeDriver version compatible with the version of Chrome installed on your system which can change when you update your Chrome browser.
 
 ## Features
 
@@ -83,3 +83,27 @@ CHROME_WEB_DRIVER_PATH = "/your/path/to/chromedriver"
 ## What This Project Does
 
 This project detects the installed Chrome version, downloads the corresponding ChromeDriver version, extracts it, and replaces the existing ChromeDriver. It also ensures proper permissions and cleans up temporary files.
+
+## Troubleshooting
+
+- **Permission Issues:**
+
+  - On macOS/Linux, you might need to run the script with `sudo` if you encounter permission issues when writing to protected directories.
+
+- **Missing Dependencies:**
+
+  - Ensure all dependencies are installed by running:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+- **Chrome Version Detection:**
+  - If the script fails to detect the Chrome version, ensure Chrome is installed in the default path or update the script to point to the correct Chrome executable.
+
+## Contributing
+
+Contributions are welcome! Please submit a pull request with detailed descriptions of your changes.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
